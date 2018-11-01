@@ -6,7 +6,7 @@ import "fmt"
 // function comment
 func main() {
 	var (
-		planet = "mars"
+		planet   = "mars"
 		distance = 54.6
 	)
 
