@@ -2,17 +2,18 @@ package conditions
 
 import "fmt"
 
-func ifstmts() {
+func switchstmts() {
 	var (
 		command = "on"
 		thing   = "tv"
 	)
 
-	if command == "on" {
+	switch command {
+	case "on":
 		fmt.Printf("It seems you want to turn on the %v", thing)
-	} else if command == "off" {
+	case "off":
 		fmt.Printf("It seems you want to turn off the %v", thing)
-	} else {
+	default:
 		fmt.Printf("Well, it seems you don't have any idea about what to do with the %v", thing)
 	}
 }
