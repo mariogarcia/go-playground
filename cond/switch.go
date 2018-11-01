@@ -1,10 +1,10 @@
-package conditions
+package cond
 
 import "fmt"
 
-func switchstmts() {
+func ExecuteSwitch() {
 	var (
-		command = "on"
+		command = "off"
 		thing   = "tv"
 	)
 
@@ -16,4 +16,6 @@ func switchstmts() {
 	default:
 		fmt.Printf("Well, it seems you don't have any idea about what to do with the %v", thing)
 	}
+
+	fmt.Print("\n")
 }

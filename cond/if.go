@@ -1,8 +1,8 @@
-package conditions
+package cond
 
 import "fmt"
 
-func ifstmts() {
+func ExecuteIf() {
 	var (
 		command = "on"
 		thing   = "tv"
@@ -15,4 +15,6 @@ func ifstmts() {
 	} else {
 		fmt.Printf("Well, it seems you don't have any idea about what to do with the %v", thing)
 	}
+
+	fmt.Print("\n")
 }
